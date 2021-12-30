@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message Murid {
+    string name = 1;
+    double phoneNumber = 2;
+
+    message FavoriteFood{
+        string food = 1;
+    }
+
+    repeated FavoriteFood favoriteFood = 3;
+}
+
+message BukuTahunan {
+    repeated Murid murid =1;
+}
